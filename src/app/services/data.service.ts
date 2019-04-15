@@ -10,6 +10,10 @@ export class DataService extends BaseCommService {
   constructor(protected httpClient: HttpClient) {
     super(httpClient);
   }
+
+  getCourses(): CourseItem[] {
+    return courseItems;
+  }
 }
 
 const courseItems: CourseItem[] = [
