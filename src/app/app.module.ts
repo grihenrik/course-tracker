@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses/courses.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CourseComponent } from './course/course.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoursesComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CourseComponent
   ],
   imports: [
     BrowserModule,
