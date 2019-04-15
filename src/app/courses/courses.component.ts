@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CourseItem, AssignmentItem } from '../templates/template';
 import { DataService } from '../services/data.service';
 
@@ -10,7 +11,7 @@ import { DataService } from '../services/data.service';
 export class CoursesComponent implements OnInit {
   courses: CourseItem[];
 
-  constructor(protected dataService: DataService) {}
+  constructor(protected dataService: DataService, protected router: Router) {}
 
   ngOnInit() {
     this.courses = this.dataService.getCourses();
@@ -19,5 +20,6 @@ export class CoursesComponent implements OnInit {
 
   onSelect(id: number) {
     console.log(`Course id: ${id} clicked`);
+    this.router.navigate([`/course/${id}`]);
   }
 }
