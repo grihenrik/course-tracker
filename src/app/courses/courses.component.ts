@@ -16,4 +16,8 @@ export class CoursesComponent implements OnInit {
     this.courses = this.dataService.getCourses();
     console.log(`CoursesComponent: ${JSON.stringify(this.courses)}`);
   }
+
+  onSelect(id: number) {
+    console.log(`Course id: ${id} clicked`);
+  }
 }
