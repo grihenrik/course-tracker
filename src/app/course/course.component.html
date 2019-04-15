@@ -7,4 +7,6 @@
 </ul>
 
 <h2>Assignments</h2>
-<h2>{{ assignments.name }}</h2>
+<ul *ngFor="let assignment of assignments">
+  <li>{{ assignment.desc }}</li>
+</ul>

@@ -16,6 +16,7 @@ export class DataService extends BaseCommService {
   }
 
   getCourse(index: number): CourseItem {
+    // return courseItems.filter(item => item.course_id === index).pop();
     return courseItems.filter(item => item.course_id === index).pop();
   }
 

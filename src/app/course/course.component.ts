@@ -20,5 +20,6 @@ export class CourseComponent implements OnInit {
   ngOnInit() {
     this.courseItem = this.dataService.getCourse(this.courseId);
     this.assignments = this.dataService.getCourseAssignments(this.courseId);
+    console.log(this.assignments);
   }
 }
