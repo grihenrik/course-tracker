@@ -25,3 +25,4 @@ export class BaseCommService {
   protected async getRequest(uri: any): Promise<any> {
     return await this.httpClient.get(`${this.API_URL}/${uri}`).toPromise();
   }
+}
